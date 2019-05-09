@@ -28,12 +28,12 @@ struct Driver {
 
     let firstName: String
     let lastName: String
-    let age: Int
+    let birtday: Date
 
     // MARK: - Class Methods
 
     static var `default`: Driver {
-        return Driver(firstName: "Driver", lastName: "One", age: 99)
+        return Driver(firstName: "Driver", lastName: "One", birtday: .thirtyYearsAgo())
     }
 }
 
@@ -41,7 +41,7 @@ extension Driver {
 
     func toPersonable() -> Personable {
 
-        return PersonableObject(name: self.firstName + ", " + self.lastName, age: self.age)
+        return PersonableObject(name: self.firstName + ", " + self.lastName, age: self.birtday.toAge())
     }
 }
 
@@ -52,4 +52,25 @@ struct PersonableObject: Personable {
 
     var name: String
     var age: Int
+}
+
+extension Date {
+
+    static func thirtyYearsAgo() -> Date {
+        var dateComponents = DateComponents()
+        dateComponents.year = 1989  //  31 December 1988 0:00
+
+        return Calendar.current.date(from: dateComponents) ?? Date()
+    }
+
+    func toAge() -> Int {
+        return Calendar.current.dateComponents([.year], from: self, to: Date()).year ?? 0
+    }
+}
+
+extension Double {
+
+    func toInt() -> Int {
+        return Int(self)
+    }
 }
