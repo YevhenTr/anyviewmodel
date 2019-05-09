@@ -10,12 +10,15 @@ import UIKit
 
 class DetailView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    // MARK: - Properties
+    
+    @IBOutlet var nameLabel: UILabel?
+    @IBOutlet var ageLabel: UILabel?
 
+    // MARK: - Public API
+
+    func fill(with model: Personable) {
+        self.nameLabel?.text = model.name
+        self.ageLabel?.text = model.age.description
+    }
 }

@@ -14,10 +14,24 @@ class DetailViewController: UIViewController, RootViewRepresentable {
 
     typealias RootView = DetailView
 
+    // MARK: - Properties
+
+    var model: Personable?
+
+    // MARK: - Class Methods
+
+    static func create(model: Personable) -> DetailViewController {
+        let controller = DetailViewController(nibName: nil, bundle: nil)
+        controller.model = model
+
+        return controller
+    }
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        self.model.map { self.rootView?.fill(with: $0) }
     }
 }

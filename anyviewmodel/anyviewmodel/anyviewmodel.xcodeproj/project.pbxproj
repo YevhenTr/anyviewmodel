@@ -87,9 +87,6 @@
 			children = (
 				3F71B86122843BCF00E964E9 /* DetailViewController */,
 				3F71B86022843BB400E964E9 /* MasterViewController */,
-				3F71B8472284357900E964E9 /* MasterViewController.swift */,
-				3F71B85A228438A600E964E9 /* MasterViewController.xib */,
-				3F71B85E2284398C00E964E9 /* MasterView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -97,6 +94,9 @@
 		3F71B86022843BB400E964E9 /* MasterViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3F71B8472284357900E964E9 /* MasterViewController.swift */,
+				3F71B85E2284398C00E964E9 /* MasterView.swift */,
+				3F71B85A228438A600E964E9 /* MasterViewController.xib */,
 			);
 			path = MasterViewController;
 			sourceTree = "<group>";
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				3F71B86222843BF800E964E9 /* DetailViewController.swift */,
-				3F71B86322843BF800E964E9 /* DetailViewController.xib */,
 				3F71B86622843C0E00E964E9 /* DetailView.swift */,
+				3F71B86322843BF800E964E9 /* DetailViewController.xib */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
