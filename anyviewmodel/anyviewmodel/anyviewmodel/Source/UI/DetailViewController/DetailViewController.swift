@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  anyviewmodel
 //
 //  Created by Evhenyi Triukhan on 5/9/19.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DetailViewController: UIViewController, RootViewRepresentable {
+
+    // MARK: - Subtypes
+
+    typealias RootView = DetailView
+
+    // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
-

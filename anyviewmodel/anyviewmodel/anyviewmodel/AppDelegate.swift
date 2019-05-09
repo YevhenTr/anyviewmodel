@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        let citiesViewController = MasterViewController(nibName: nil, bundle: nil)
+        let navigationController = UINavigationController(rootViewController: citiesViewController)
+
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        self.window = window
+        
         // Override point for customization after application launch.
         return true
     }
