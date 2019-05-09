@@ -24,7 +24,7 @@ class MasterViewController: UIViewController, RootViewRepresentable {
     // MARK: - UI Actions
 
     @IBAction func onShowDriver(_ sender: UIButton) {
-        let controller = DetailViewController.create(model: Driver.default)
+        let controller = DetailViewController.create(model: Driver.default.toPersonable())
 
         self.push(controller)
     }
@@ -39,39 +39,5 @@ class MasterViewController: UIViewController, RootViewRepresentable {
     private func push(_ controller: UIViewController) {
         self.navigationController?.pushViewController(controller, animated: true)
     }
-}
-
-struct Passanger: Personable {
-
-    // MARK: - Propertis
-
-    let name: String
-    let age: Int
-
-    // MARK: - Class Methods
-
-    static var `default`: Passanger {
-        return Passanger(name: "Passanger", age: 99)
-    }
-}
-
-struct Driver: Personable {
-
-    // MARK: - Propertis
-
-    let name: String
-    let age: Int
-
-    // MARK: - Class Methods
-
-    static var `default`: Driver {
-        return Driver(name: "Driver", age: 99)
-    }
-}
-
-protocol Personable {
-
-    var name: String { get }
-    var age: Int { get }
 }
 
