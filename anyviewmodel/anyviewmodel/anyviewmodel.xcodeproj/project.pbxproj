@@ -19,6 +19,7 @@
 		3F71B86722843C0E00E964E9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71B86622843C0E00E964E9 /* DetailView.swift */; };
 		3F71B86B228449AB00E964E9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71B86A228449AB00E964E9 /* Models.swift */; };
 		3F71B86E228449EA00E964E9 /* Personable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71B86D228449EA00E964E9 /* Personable.swift */; };
+		3F71B87022844F8300E964E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71B86F22844F8300E964E9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3F71B86622843C0E00E964E9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3F71B86A228449AB00E964E9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3F71B86D228449EA00E964E9 /* Personable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personable.swift; sourceTree = "<group>"; };
+		3F71B86F22844F8300E964E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				3F71B85C2284395700E964E9 /* RootViewRepresentable.swift */,
 				3F71B86D228449EA00E964E9 /* Personable.swift */,
+				3F71B86F22844F8300E964E9 /* Extensions.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F71B85F2284398C00E964E9 /* MasterView.swift in Sources */,
+				3F71B87022844F8300E964E9 /* Extensions.swift in Sources */,
 				3F71B86722843C0E00E964E9 /* DetailView.swift in Sources */,
 				3F71B8482284357900E964E9 /* MasterViewController.swift in Sources */,
 				3F71B86422843BF800E964E9 /* DetailViewController.swift in Sources */,
